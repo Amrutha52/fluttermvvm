@@ -28,23 +28,47 @@ class _HomeScreenState extends State<HomeScreen>
         backgroundColor: Colors.greenAccent,
         elevation: 20,
       ),
-      body: ListView(
-        scrollDirection: Axis.horizontal,
-        children: [
-          Container(
-            color: Colors.red,
-            width: 500,
-          ),
-          Container(
-            color: Colors.green,
-            width: 500,
-          ),
-          Container(
-            color: Colors.blueGrey,
-            width: 500,
-          )
-        ],
+      body:
+      SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          
+          children: [
+            Container(
+              color: Colors.red,
+              height: 100,
+              width: 500,
+            ),
+            Container(
+              color: Colors.green,
+              height: 100,
+              width: 500,
+            ),
+            Container(
+              color: Colors.blueGrey,
+              height: 100,
+              width: 500,
+            )
+          ],
+        ),
       ),
+      // ListView(
+      //   scrollDirection: Axis.horizontal,
+      //   children: [
+      //     Container(
+      //       color: Colors.red,
+      //       width: 500,
+      //     ),
+      //     Container(
+      //       color: Colors.green,
+      //       width: 500,
+      //     ),
+      //     Container(
+      //       color: Colors.blueGrey,
+      //       width: 500,
+      //     )
+      //   ],
+      // ),
     );
   }
 }
